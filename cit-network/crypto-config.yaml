@@ -1,0 +1,24 @@
+OrdererOrgs:
+  - Name: OrderingService
+    Domain: cit-network.com
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+  - Name: cit1
+    Domain: cit1.cit-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+
+    Users: 
+      Count: 1
+      
+  - Name: cit2
+    Domain: cit2.cit-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 1
+
+    Users: 
+      Count: 1
